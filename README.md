@@ -1,5 +1,5 @@
 
-<h1 align="center" style="color: #ff4500;">⚠️ NO CHANGES MADE TO THIS REPOSITORY ⚠️</h1>
+<h1 align="center" style="color: #ff4500;">⚠️ NO CHANGES MADE TO THIS REPOSITORY from original⚠️</h1>
 
 <h1 align="center">ACE-Step 1.5</h1>
 <h1 align="center">Pushing the Boundaries of Open-Source Music Generation</h1>
