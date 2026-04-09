@@ -1,9 +1,5 @@
-בוודאי, הנה הקוד המתוקן עבור ה-README שלך. הוספתי באנר בולט בראש הדף המבהיר שהפרויקט כרגע ללא שינויים מהמקור ושהוא בתהליכי עבודה (Not working yet), כפי שביקשת:
 
-````markdown
-> [!IMPORTANT]
-> **Fork Notice:** This repository is a fork of the original ACE-Step 1.5. 
-> At this stage, **no changes have been made to the original code**, and the project is currently **not working yet** in this specific environment.
+<h1 align="center" style="color: #ff4500;">⚠️ NO CHANGES MADE TO THIS REPOSITORY ⚠️</h1>
 
 <h1 align="center">ACE-Step 1.5</h1>
 <h1 align="center">Pushing the Boundaries of Open-Source Music Generation</h1>
@@ -110,11 +106,11 @@ Star ACE-Step on GitHub and be instantly notified of new releases
 
 ```bash
 # 1. Install uv
-curl -LsSf [https://astral.sh/uv/install.sh](https://astral.sh/uv/install.sh) | sh          # macOS / Linux
-# powershell -ExecutionPolicy ByPass -c "irm [https://astral.sh/uv/install.ps1](https://astral.sh/uv/install.ps1) | iex"  # Windows
+curl -LsSf https://astral.sh/uv/install.sh | sh         # macOS / Linux
+# powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"  # Windows
 
 # 2. Clone & install
-git clone [https://github.com/ACE-Step/ACE-Step-1.5.git](https://github.com/ACE-Step/ACE-Step-1.5.git)
+git clone https://github.com/ACE-Step/ACE-Step-1.5.git
 cd ACE-Step-1.5
 uv sync
 
@@ -123,15 +119,15 @@ uv run acestep
 
 # Or launch REST API server
 uv run acestep-api
-````
+```
 
 Open http://localhost:7860 (Gradio) or http://localhost:8001 (API).
 
-> 📦 **Windows users:** A [portable package](https://files.acemusic.ai/acemusic/win/ACE-Step-1.5.7z) with pre-installed dependencies is available. See [Installation Guide](https://www.google.com/search?q=./docs/en/INSTALL.md%23-windows-portable-package).
+> 📦 **Windows users:** A [portable package](https://files.acemusic.ai/acemusic/win/ACE-Step-1.5.7z) with pre-installed dependencies is available. See [Installation Guide](./docs/en/INSTALL.md#-windows-portable-package).
 
-> 📦 **MacOS users:** A [portable package](https://files.acemusic.ai/acemusic/mac/ACE-Step-1.5.zip) with pre-installed dependencies is available. See [Installation Guide](https://www.google.com/search?q=./docs/en/INSTALL.md%23-macos-portable-package).
+> 📦 **MacOS users:** A [portable package](https://files.acemusic.ai/acemusic/mac/ACE-Step-1.5.zip) with pre-installed dependencies is available. See [Installation Guide](./docs/en/INSTALL.md#-macos-portable-package).
 
-> 📖 **Full installation guide** (AMD/ROCm, Intel GPU, CPU, environment variables, command-line options): [English](https://www.google.com/search?q=./docs/en/INSTALL.md) | [中文](https://www.google.com/search?q=./docs/zh/INSTALL.md) | [日本語](https://www.google.com/search?q=./docs/ja/INSTALL.md)
+> 📖 **Full installation guide** (AMD/ROCm, Intel GPU, CPU, environment variables, command-line options): [English](./docs/en/INSTALL.md) | [中文](./docs/zh/INSTALL.md) | [日本語](./docs/ja/INSTALL.md)
 
 ### 💡 Which Model Should I Choose?
 
@@ -144,11 +140,11 @@ Open http://localhost:7860 (Gradio) or http://localhost:8001 (API).
 | **20-24GB** | XL turbo/sft | `acestep-5Hz-lm-1.7B` | `vllm` | XL fits without offload; 4B LM available |
 | **≥24GB** | XL sft (or xl-base for extract/lego/complete) | `acestep-5Hz-lm-4B` | `vllm` | Best quality, all models fit without offload |
 
-> **XL (4B) models** (`acestep-v15-xl-*`) offer higher audio quality with \~9GB VRAM for weights (vs \~4.7GB for 2B). They require ≥12GB VRAM (with offload + quantization) or ≥20GB (without offload). All LM models are fully compatible with XL.
+> **XL (4B) models** (`acestep-v15-xl-*`) offer higher audio quality with ~9GB VRAM for weights (vs ~4.7GB for 2B). They require ≥12GB VRAM (with offload + quantization) or ≥20GB (without offload). All LM models are fully compatible with XL.
 
 The UI automatically selects the best configuration for your GPU. All settings (LM model, backend, offloading, quantization) are tier-aware and pre-configured.
 
-> 📖 GPU compatibility details: [English](https://www.google.com/search?q=./docs/en/GPU_COMPATIBILITY.md) | [中文](https://www.google.com/search?q=./docs/zh/GPU_COMPATIBILITY.md) | [日本語](https://www.google.com/search?q=./docs/ja/GPU_COMPATIBILITY.md) | [한국어](https://www.google.com/search?q=./docs/ko/GPU_COMPATIBILITY.md)
+> 📖 GPU compatibility details: [English](./docs/en/GPU_COMPATIBILITY.md) | [中文](./docs/zh/GPU_COMPATIBILITY.md) | [日本語](./docs/ja/GPU_COMPATIBILITY.md) | [한국어](./docs/ko/GPU_COMPATIBILITY.md)
 
 ## 🚀 Launch Scripts
 
@@ -188,7 +184,7 @@ PORT=7860
 LANGUAGE=en
 ```
 
-> 📖 **Script configuration & customization:** [English](https://www.google.com/search?q=./docs/en/INSTALL.md%23-launch-scripts) | [中文](https://www.google.com/search?q=./docs/zh/INSTALL.md%23-%E5%90%AF%E5%8A%A8%E8%84%9A%E6%9C%AC) | [日本語](https://www.google.com/search?q=./docs/ja/INSTALL.md%23-%E8%B5%B7%E5%8B%95%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88)
+> 📖 **Script configuration & customization:** [English](./docs/en/INSTALL.md#-launch-scripts) | [中文](./docs/zh/INSTALL.md#-启动脚本) | [日本語](./docs/ja/INSTALL.md#-起動スクリプト)
 
 ## 📚 Documentation
 
@@ -196,30 +192,30 @@ LANGUAGE=en
 
 | Method | Description | Documentation |
 |--------|-------------|---------------|
-| 🖥️ **Gradio Web UI** | Interactive web interface for music generation | [Guide](https://www.google.com/search?q=./docs/en/GRADIO_GUIDE.md) |
-| 🎚️ **Studio UI** | Optional HTML frontend (DAW-like) | [Guide](https://www.google.com/search?q=./docs/en/studio.md) |
+| 🖥️ **Gradio Web UI** | Interactive web interface for music generation | [Guide](./docs/en/GRADIO_GUIDE.md) |
+| 🎚️ **Studio UI** | Optional HTML frontend (DAW-like) | [Guide](./docs/en/studio.md) |
 | 🎛️ **VST3 Plugin** | Standalone VST3 plugin (C++/GGML) for DAW integration | [acestep.vst3](https://github.com/ace-step/acestep.vst3) |
-| 🐍 **Python API** | Programmatic access for integration | [Guide](https://www.google.com/search?q=./docs/en/INFERENCE.md) |
-| 🌐 **REST API** | HTTP-based async API for services | [Guide](https://www.google.com/search?q=./docs/en/API.md) |
-| ⌨️ **CLI** | Interactive wizard and configuration | [Guide](https://www.google.com/search?q=./docs/en/CLI.md) |
+| 🐍 **Python API** | Programmatic access for integration | [Guide](./docs/en/INFERENCE.md) |
+| 🌐 **REST API** | HTTP-based async API for services | [Guide](./docs/en/API.md) |
+| ⌨️ **CLI** | Interactive wizard and configuration | [Guide](./docs/en/CLI.md) |
 
 ### Setup & Configuration
 
 | Topic | Documentation |
 |-------|---------------|
-| 📦 Installation (all platforms) | [English](https://www.google.com/search?q=./docs/en/INSTALL.md) | [中文](https://www.google.com/search?q=./docs/zh/INSTALL.md) | [日本語](https://www.google.com/search?q=./docs/ja/INSTALL.md) |
-| 🎮 GPU Compatibility | [English](https://www.google.com/search?q=./docs/en/GPU_COMPATIBILITY.md) | [中文](https://www.google.com/search?q=./docs/zh/GPU_COMPATIBILITY.md) | [日本語](https://www.google.com/search?q=./docs/ja/GPU_COMPATIBILITY.md) |
-| 🔧 GPU Troubleshooting | [English](https://www.google.com/search?q=./docs/en/GPU_TROUBLESHOOTING.md) |
-| 🔬 Benchmark & Profiling | [English](https://www.google.com/search?q=./docs/en/BENCHMARK.md) | [中文](https://www.google.com/search?q=./docs/zh/BENCHMARK.md) |
+| 📦 Installation (all platforms) | [English](./docs/en/INSTALL.md) \| [中文](./docs/zh/INSTALL.md) \| [日本語](./docs/ja/INSTALL.md) |
+| 🎮 GPU Compatibility | [English](./docs/en/GPU_COMPATIBILITY.md) \| [中文](./docs/zh/GPU_COMPATIBILITY.md) \| [日本語](./docs/ja/GPU_COMPATIBILITY.md) |
+| 🔧 GPU Troubleshooting | [English](./docs/en/GPU_TROUBLESHOOTING.md) |
+| 🔬 Benchmark & Profiling | [English](./docs/en/BENCHMARK.md) \| [中文](./docs/zh/BENCHMARK.md) |
 
 ### Multi-Language Docs
 
 | Language | API | Gradio | Inference | Tutorial | LoRA Training | Install | Benchmark |
 |----------|-----|--------|-----------|----------|---------------|---------|-----------|
-| 🇺🇸 English | [Link](https://www.google.com/search?q=./docs/en/API.md) | [Link](https://www.google.com/search?q=./docs/en/GRADIO_GUIDE.md) | [Link](https://www.google.com/search?q=./docs/en/INFERENCE.md) | [Link](https://www.google.com/search?q=./docs/en/Tutorial.md) | [Link](https://www.google.com/search?q=./docs/en/LoRA_Training_Tutorial.md) | [Link](https://www.google.com/search?q=./docs/en/INSTALL.md) | [Link](https://www.google.com/search?q=./docs/en/BENCHMARK.md) |
-| 🇨🇳 中文 | [Link](https://www.google.com/search?q=./docs/zh/API.md) | [Link](https://www.google.com/search?q=./docs/zh/GRADIO_GUIDE.md) | [Link](https://www.google.com/search?q=./docs/zh/INFERENCE.md) | [Link](https://www.google.com/search?q=./docs/zh/Tutorial.md) | [Link](https://www.google.com/search?q=./docs/zh/LoRA_Training_Tutorial.md) | [Link](https://www.google.com/search?q=./docs/zh/INSTALL.md) | [Link](https://www.google.com/search?q=./docs/zh/BENCHMARK.md) |
-| 🇯🇵 日本語 | [Link](https://www.google.com/search?q=./docs/ja/API.md) | [Link](https://www.google.com/search?q=./docs/ja/GRADIO_GUIDE.md) | [Link](https://www.google.com/search?q=./docs/ja/INFERENCE.md) | [Link](https://www.google.com/search?q=./docs/ja/Tutorial.md) | [Link](https://www.google.com/search?q=./docs/ja/LoRA_Training_Tutorial.md) | [Link](https://www.google.com/search?q=./docs/ja/INSTALL.md) | — |
-| 🇰🇷 한국어 | [Link](https://www.google.com/search?q=./docs/ko/API.md) | [Link](https://www.google.com/search?q=./docs/ko/GRADIO_GUIDE.md) | [Link](https://www.google.com/search?q=./docs/ko/INFERENCE.md) | [Link](https://www.google.com/search?q=./docs/ko/Tutorial.md) | [Link](https://www.google.com/search?q=./docs/ko/LoRA_Training_Tutorial.md) | — | — |
+| 🇺🇸 English | [Link](./docs/en/API.md) | [Link](./docs/en/GRADIO_GUIDE.md) | [Link](./docs/en/INFERENCE.md) | [Link](./docs/en/Tutorial.md) | [Link](./docs/en/LoRA_Training_Tutorial.md) | [Link](./docs/en/INSTALL.md) | [Link](./docs/en/BENCHMARK.md) |
+| 🇨🇳 中文 | [Link](./docs/zh/API.md) | [Link](./docs/zh/GRADIO_GUIDE.md) | [Link](./docs/zh/INFERENCE.md) | [Link](./docs/zh/Tutorial.md) | [Link](./docs/zh/LoRA_Training_Tutorial.md) | [Link](./docs/zh/INSTALL.md) | [Link](./docs/zh/BENCHMARK.md) |
+| 🇯🇵 日本語 | [Link](./docs/ja/API.md) | [Link](./docs/ja/GRADIO_GUIDE.md) | [Link](./docs/ja/INFERENCE.md) | [Link](./docs/ja/Tutorial.md) | [Link](./docs/ja/LoRA_Training_Tutorial.md) | [Link](./docs/ja/INSTALL.md) | — |
+| 🇰🇷 한국어 | [Link](./docs/ko/API.md) | [Link](./docs/ko/GRADIO_GUIDE.md) | [Link](./docs/ko/INFERENCE.md) | [Link](./docs/ko/Tutorial.md) | [Link](./docs/ko/LoRA_Training_Tutorial.md) | — | — |
 
 ## 📖 Tutorial
 
@@ -227,9 +223,9 @@ LANGUAGE=en
 
 | Language | Link |
 |----------|------|
-| 🇺🇸 English | [English Tutorial](https://www.google.com/search?q=./docs/en/Tutorial.md) |
-| 🇨🇳 中文 | [中文教程](https://www.google.com/search?q=./docs/zh/Tutorial.md) |
-| 🇯🇵 日本語 | [日本語チュートリアル](https://www.google.com/search?q=./docs/ja/Tutorial.md) |
+| 🇺🇸 English | [English Tutorial](./docs/en/Tutorial.md) |
+| 🇨🇳 中文 | [中文教程](./docs/zh/Tutorial.md) |
+| 🇯🇵 日本語 | [日本語チュートリアル](./docs/ja/Tutorial.md) |
 
 This tutorial covers: mental models and design philosophy, model architecture and selection, input control (text and audio), inference hyperparameters, random factors and optimization strategies.
 
@@ -239,26 +235,26 @@ This tutorial covers: mental models and design philosophy, model architecture an
 
 | Language | Link |
 |----------|------|
-| 🇺🇸 English | [LoRA Training Tutorial](https://www.google.com/search?q=./docs/en/LoRA_Training_Tutorial.md) |
-| 🇨🇳 中文 | [LoRA 训练教程](https://www.google.com/search?q=./docs/zh/LoRA_Training_Tutorial.md) |
-| 🇯🇵 日本語 | [LoRA トレーニングチュートリアル](https://www.google.com/search?q=./docs/ja/LoRA_Training_Tutorial.md) |
-| 🇰🇷 한국어 | [LoRA 학습 튜토리אל](https://www.google.com/search?q=./docs/ko/LoRA_Training_Tutorial.md) |
+| 🇺🇸 English | [LoRA Training Tutorial](./docs/en/LoRA_Training_Tutorial.md) |
+| 🇨🇳 中文 | [LoRA 训练教程](./docs/zh/LoRA_Training_Tutorial.md) |
+| 🇯🇵 日本語 | [LoRA トレーニングチュートリアル](./docs/ja/LoRA_Training_Tutorial.md) |
+| 🇰🇷 한국어 | [LoRA 학습 튜토리얼](./docs/ko/LoRA_Training_Tutorial.md) |
 
-See also the **LoRA Training** tab in Gradio UI for one-click training, or [Gradio Guide - LoRA Training](https://www.google.com/search?q=./docs/en/GRADIO_GUIDE.md%23lora-training) for UI reference.
+See also the **LoRA Training** tab in Gradio UI for one-click training, or [Gradio Guide - LoRA Training](./docs/en/GRADIO_GUIDE.md#lora-training) for UI reference.
 
-🔧 **Advanced Training with [Side-Step](https://github.com/koda-dernet/Side-Step)** — CLI-based training toolkit with corrected timestep sampling, LoKR adapters, VRAM optimization, gradient sensitivity analysis, and more. See the [Side-Step documentation](https://www.google.com/search?q=./docs/sidestep/Getting%2520Started.md).
+🔧 **Advanced Training with [Side-Step](https://github.com/koda-dernet/Side-Step)** — CLI-based training toolkit with corrected timestep sampling, LoKR adapters, VRAM optimization, gradient sensitivity analysis, and more. See the [Side-Step documentation](./docs/sidestep/Getting%20Started.md).
 
 ## 🏗️ Architecture
 
-\<p align="center"\>
-\<img src="./assets/ACE-Step\_framework.png" width="100%" alt="ACE-Step Framework"\>
-\</p\>
+<p align="center">
+    <img src="./assets/ACE-Step_framework.png" width="100%" alt="ACE-Step Framework">
+</p>
 
 ## 🦁 Model Zoo
 
-\<p align="center"\>
-\<img src="./assets/model\_zoo.png" width="100%" alt="Model Zoo"\>
-\</p\>
+<p align="center">
+    <img src="./assets/model_zoo.png" width="100%" alt="Model Zoo">
+</p>
 
 ### DiT Models
 
@@ -270,7 +266,7 @@ See also the **LoRA Training** tab in Gradio UI for one-click training, or [Grad
 
 ### XL (4B) DiT Models
 
-> XL models use a larger 4B-parameter DiT decoder (\~9GB bf16) for higher audio quality. They require ≥12GB VRAM (with offload + quantization) or ≥20GB (without offload). All LM models are fully compatible.
+> XL models use a larger 4B-parameter DiT decoder (~9GB bf16) for higher audio quality. They require ≥12GB VRAM (with offload + quantization) or ≥20GB (without offload). All LM models are fully compatible.
 
 | DiT Model | Pre-Training | SFT | RL | CFG | Step | Refer audio | Text2Music | Cover | Repaint | Extract | Lego | Complete | Quality | Diversity | Fine-Tunability | Hugging Face |
 |-----------|:------------:|:---:|:--:|:---:|:----:|:-----------:|:----------:|:-----:|:-------:|:-------:|:----:|:--------:|:-------:|:---------:|:---------------:|--------------|
@@ -291,23 +287,23 @@ See also the **LoRA Training** tab in Gradio UI for one-click training, or [Grad
 ACE-Step 1.5 includes `profile_inference.py`, a profiling & benchmarking tool that measures LLM, DiT, and VAE timing across devices and configurations.
 
 ```bash
-python profile_inference.py                        # Single-run profile
-python profile_inference.py --mode benchmark       # Configuration matrix
+python profile_inference.py                 # Single-run profile
+python profile_inference.py --mode benchmark     # Configuration matrix
 ```
 
-> 📖 **Full guide** (all modes, CLI options, output interpretation): [English](https://www.google.com/search?q=./docs/en/BENCHMARK.md) | [中文](https://www.google.com/search?q=./docs/zh/BENCHMARK.md)
+> 📖 **Full guide** (all modes, CLI options, output interpretation): [English](./docs/en/BENCHMARK.md) | [中文](./docs/zh/BENCHMARK.md)
 
 ## 📜 License & Disclaimer
 
-This project is licensed under [MIT](https://www.google.com/search?q=./LICENSE)
+This project is licensed under [MIT](./LICENSE)
 
 ACE-Step enables original music generation across diverse genres, with applications in creative production, education, and entertainment. While designed to support positive and artistic use cases, we acknowledge potential risks such as unintentional copyright infringement due to stylistic similarity, inappropriate blending of cultural elements, and misuse for generating harmful content. To ensure responsible use, we encourage users to verify the originality of generated works, clearly disclose AI involvement, and obtain appropriate permissions when adapting protected styles or materials. By using ACE-Step, you agree to uphold these principles and respect artistic integrity, cultural diversity, and legal compliance. The authors are not responsible for any misuse of the model, including but not limited to copyright violations, cultural insensitivity, or the generation of harmful content.
 
 🔔 Important Notice  
-The only official website for the ACE-Step project is our GitHub Pages site.  
-We do not operate any other websites.  
+The only official website for the ACE-Step project is our GitHub Pages site.    
+ We do not operate any other websites.  
 🚫 Fake domains include but are not limited to:
-ac\*\*p.com, a\*\*p.org, a\*\*\*c.org  
+ac**p.com, a**p.org, a***c.org  
 ⚠️ Please be cautious. Do not visit, trust, or make payments on any of those sites.
 
 ## 🌐 Community & Ecosystem
@@ -318,19 +314,18 @@ Check out **[Awesome ACE-Step](https://github.com/ace-step/awesome-ace-step)** �
 
 This project is co-led by ACE Studio and StepFun.
 
+
 ## 📖 Citation
 
 If you find this project useful for your research, please consider citing:
 
-```bibtex
+```BibTeX
 @misc{gong2026acestep,
 	title={ACE-Step 1.5: Pushing the Boundaries of Open-Source Music Generation},
 	author={Junmin Gong, Yulin Song, Wenxiao Zhao, Sen Wang, Shengyuan Xu, Jing Guo}, 
-	howpublished={\url{[https://github.com/ace-step/ACE-Step-1.5](https://github.com/ace-step/ACE-Step-1.5)}},
+	howpublished={\url{https://github.com/ace-step/ACE-Step-1.5}},
 	year={2026},
 	note={GitHub repository}
 }
-```
-
 ```
 ```
