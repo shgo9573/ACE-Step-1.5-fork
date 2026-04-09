@@ -56,8 +56,7 @@ def _smart_checkpoint_default() -> str:
 def run_first_setup() -> dict:
     """Walk the user through first-time setup.
 
-    Returns the settings dict ready for ``save_settings()``.
-    """
+    Returns the settings dict ready for ``save_settings()``."""
     from acestep.training_v2.settings import _default_settings
 
     data = _default_settings()
@@ -82,10 +81,7 @@ def run_first_setup() -> dict:
     _print("  [bold yellow]Vanilla[/] mode reproduces the original ACE-Step training")
     _print("  behavior (discrete timesteps, no CFG dropout).\n")
 
-    data["vanilla_enabled"] = ask_bool(
-        "Do you plan to use Vanilla training mode?",
-        default=False,
-    )
+    data["vanilla_enabled"] = False
 
     # -- Checkpoint directory -----------------------------------------------
     section("Model Checkpoints")
@@ -94,7 +90,7 @@ def run_first_setup() -> dict:
 
     default_ckpt = _smart_checkpoint_default()
     while True:
-        ckpt_dir = ask_path("Checkpoint directory", default=default_ckpt)
+        ckpt_dir = "/kaggle/working/ACE-Step-1.5-fork/checkpoints"
         ckpt_path = Path(ckpt_dir)
         if not ckpt_path.is_dir():
             _print(f"  [red]Directory not found: {_esc(ckpt_dir)}[/]")
